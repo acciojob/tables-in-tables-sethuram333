@@ -1,20 +1,14 @@
+/* Apply border to all tables and cells */
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+	text-align:center
+}
 
-/* Your CSS Code here. */
- table {
-            border-collapse: collapse;
-            width: 100%;
-            border: 2px solid black;
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 10px;
-            text-align: center;
-        }
-        .nested-header {
-            background-color: #f2f2f2;
-            font-weight: bold;
-        }
-        .black-bg {
-            background-color: black;
-            color: white;
-        }
+/* Make nested tables take full width */
+table table {
+  width: 100%;
+}
+
+/* Optional: Make main table full height *
